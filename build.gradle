@@ -90,4 +90,8 @@ dependencyReport {
     configuration = 'default'
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 assemble.dependsOn(dependencyReport)
